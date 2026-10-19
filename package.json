@@ -1,0 +1,56 @@
+{
+  "name": "worable",
+  "version": "0.0.0",
+  "description": "A table-driven S-expression interpreter core. Parsing and evaluation only — every word is supplied by the caller, and nothing is ever eval'd or compiled.",
+  "keywords": [
+    "interpreter",
+    "no-eval",
+    "parser",
+    "s-expression",
+    "table-driven",
+    "zero-dependency"
+  ],
+  "homepage": "https://github.com/Himavanta/worable#readme",
+  "bugs": {
+    "url": "https://github.com/Himavanta/worable/issues"
+  },
+  "license": "MIT",
+  "author": "Himavanta <himavanta@foxmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himavanta/worable.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "bumpp": "^12.3.0",
+    "typescript": "^7.0.2",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.14.0",
+      "onFail": "download"
+    }
+  }
+}
