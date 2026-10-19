@@ -1,6 +1,6 @@
 {
   "name": "worable",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A table-driven S-expression interpreter core. Parsing and evaluation only — every word is supplied by the caller, and nothing is ever eval'd or compiled.",
   "keywords": [
     "interpreter",
